@@ -15,11 +15,7 @@
  * along with Baritone.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-package baritone.api;    /**
-     * Stop using tools just before they are going to break.
-     */
-    public final Setting<Boolean> itemSaver = new Setting<>(false);
-
+package baritone.api;    
 import baritone.api.utils.SettingsUtil;
 import baritone.api.utils.TypeUtils;
 import net.minecraft.client.Minecraft;
@@ -705,6 +701,11 @@ public final class Settings {
      */
     public final Setting<Boolean> itemSaver = new Setting<>(false);
 
+    /**
+     * Stop using tools just before they are going to break.
+     */
+    public final Setting<Boolean> itemSaver = new Setting<>(false);
+    
     /**
      * Always prefer silk touch tools over regular tools. This will not sacrifice speed, but it will always prefer silk
      * touch tools over other tools of the same speed. This includes always choosing ANY silk touch tool over your hand.
