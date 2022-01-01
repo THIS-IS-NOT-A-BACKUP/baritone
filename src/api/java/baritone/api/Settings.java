@@ -700,11 +700,6 @@ public final class Settings {
      * Stop using tools just before they are going to break.
      */
     public final Setting<Boolean> itemSaver = new Setting<>(false);
-
-    /**
-     * Stop using tools just before they are going to break.
-     */
-    public final Setting<Boolean> itemSaver = new Setting<>(false);
     
     /**
      * Always prefer silk touch tools over regular tools. This will not sacrifice speed, but it will always prefer silk
