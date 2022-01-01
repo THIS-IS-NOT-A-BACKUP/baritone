@@ -116,6 +116,9 @@ public class ToolSet {
         BlockState blockState = b.defaultBlockState();
         for (int i = 0; i < 9; i++) {
             ItemStack itemStack = player.getInventory().getItem(i);
+            if (itemStack.getItemDamage() >= itemStack.getMaxDamage() && Baritone.settings().itemSaver.value && itemStack.getMaxDamage() > 1) {
+                continue;
+            }
             double speed = calculateSpeedVsBlock(itemStack, blockState);
             boolean silkTouch = hasSilkTouch(itemStack);
             if (speed > highestSpeed) {

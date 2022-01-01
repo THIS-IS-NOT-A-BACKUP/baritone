@@ -15,7 +15,10 @@
  * along with Baritone.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-package baritone.api;
+package baritone.api;    /**
+     * Stop using tools just before they are going to break.
+     */
+    public final Setting<Boolean> itemSaver = new Setting<>(false);
 
 import baritone.api.utils.SettingsUtil;
 import baritone.api.utils.TypeUtils;
@@ -696,6 +699,11 @@ public final class Settings {
      * Censor arguments to ran commands, to hide, for example, coordinates to #goal
      */
     public final Setting<Boolean> censorRanCommands = new Setting<>(false);
+
+    /**
+     * Stop using tools just before they are going to break.
+     */
+    public final Setting<Boolean> itemSaver = new Setting<>(false);
 
     /**
      * Always prefer silk touch tools over regular tools. This will not sacrifice speed, but it will always prefer silk
