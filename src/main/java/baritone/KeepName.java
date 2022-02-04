@@ -15,30 +15,7 @@
  * along with Baritone.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-package baritone.api.cache;
+package baritone;
 
-import net.minecraft.util.math.BlockPos;
-
-import java.util.Map;
-
-/**
- * @author Brady
- * @since 9/23/2018
- */
-public interface IContainerMemory {
-
-    /**
-     * Gets a remembered inventory by its block position.
-     *
-     * @param pos The position of the container block
-     * @return The remembered inventory
-     */
-    IRememberedInventory getInventoryByPos(BlockPos pos);
-
-    /**
-     * Gets the map of all block positions to their remembered inventories.
-     *
-     * @return Map of block positions to their respective remembered inventories
-     */
-    Map<BlockPos, IRememberedInventory> getRememberedInventories();
-}
+// Annotation for classes and class members that should not be renamed by proguard
+public @interface KeepName {}
